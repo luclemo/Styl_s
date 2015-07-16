@@ -1,5 +1,5 @@
 // Project specific variables
-var url = 'styltheme.dev', // Local dev URL. Change as needed.
+var url = 'styltheme.dev'; // Local dev URL. Change as needed.
 
 // Load plugins
 var gulp = require('gulp'),
@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 // Styles
 gulp.task('styles', function(){
-	 gulp.src('./styl/style.styl') // All partials are imported into this main stylus file. Makes for simple gulpfile config, but maybe not best approach. Comments welcome! 
+	 gulp.src('./styl/*.styl') // Two files get compiled here: main stylsheet (all partials imported) and editor stylesheet. Makes for simple gulpfile config, but maybe not best approach. Comments welcome! 
 	.pipe(stylus())
 	.pipe(autoprefixer({
 			browsers: ['last 2 versions']

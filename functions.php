@@ -57,6 +57,13 @@ function styl_s_setup() {
 		'caption',
 	) );
 
+	/*
+      * Add Editor Style for adequate styling in text editor.
+      *
+      * @link http://codex.wordpress.org/Function_Reference/add_editor_style
+      */
+	add_editor_style( 'editor-style.css' );
+
 }
 endif; // styl_s_setup
 add_action( 'after_setup_theme', 'styl_s_setup' );
