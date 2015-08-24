@@ -6,7 +6,10 @@
 
 ### What is this?
 
-Styl_s is an adaptation of the bare bones starter theme, [Underscores (_s)](http://underscores.me). Currently the only difference you will find between this and the original is the use of [Stylus](https://learnboost.github.io/stylus/) rather than Sass, and it comes with a very basic gulp file for essential task running.
+Styl_s is an adaptation of the bare bones starter theme, [Underscores (_s)](http://underscores.me). Currently the only difference you will find between this and the original is the use of [Stylus](https://learnboost.github.io/stylus/) rather than Sass as a preprocessor.
+
+It comes with the optional [Jeet grid system](http://jeet.gs/) (a semantic stylus grid) and a very basic gulp file for essential task running.
+
 
 ## Getting Started
 
@@ -25,6 +28,7 @@ Styl_s is an adaptation of the bare bones starter theme, [Underscores (_s)](http
  If you prefer to run Gulp, this package comes with a very basic `gulpfile.js` which will:
 
  * Compile the main `style.styl` to `style.css` <br>_(all partials are imported into the single `style.styl` so there is only one file to compile)_
+ * Include the Jeet grid system (optional; on by default)
  * Autoprefix your CSS where needed
  * Synchronise file changes across multiple devices [automagically](http://www.browsersync.io/)
  * Optionally create a minified version of your CSS (a few of indicated lines to uncomment in `gulpfile.js`) 
@@ -33,11 +37,14 @@ Styl_s is an adaptation of the bare bones starter theme, [Underscores (_s)](http
 
 Would love to eventually:
 
-* Find a Stylus version of [Bourbon Neat](http://neat.bourbon.io/) to use as the grid system (would be nice wouldn't it?)
+* <del>Find a Stylus version of [Bourbon Neat](http://neat.bourbon.io/) to use as the grid system (would be nice wouldn't it?)</del>
+
+	**DONE:**
+Added the [Jeet grid system](http://jeet.gs/), a semantic grid using Stylus. Just as with Neat, this system let's you use your own markup and classes. Check out the [docs here](http://jeet.gs/).
 
 * Beef up the tooling a bit:
   - file minification & concatination
-  - get sourcemaps working (right now every time I try it, it breaks things)
+  - <del>get sourcemaps working (right now every time I try it, it breaks things)</del> **DONE**
   - maybe even some image optimization tasks?
 
 ## Why am I making YAWPT * ?
